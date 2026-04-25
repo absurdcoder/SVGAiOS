@@ -1,0 +1,4 @@
+module SVGAPlayer {
+    umbrella header "SVGA.h"
+    export *
+}
