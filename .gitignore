@@ -1,4 +1,4 @@
-Pods
 UserInterface.xcuserstate
 xcuserdata/
-*.lock
+.build
+.claude
