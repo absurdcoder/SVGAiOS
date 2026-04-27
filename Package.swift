@@ -18,24 +18,8 @@ let package = Package(
             name: "Protobuf",
             path: "Vendor/ProtobufObjectiveC",
             exclude: [
-                ".clang-format",
-                ".gitignore",
-                "BUILD.bazel",
-                "README.md",
-                "defs.bzl",
-                "GPBAny.pbobjc.m",
-                "GPBApi.pbobjc.m",
-                "GPBDuration.pbobjc.m",
-                "GPBEmpty.pbobjc.m",
-                "GPBFieldMask.pbobjc.m",
-                "GPBProtocolBuffers.m",
-                "GPBSourceContext.pbobjc.m",
-                "GPBStruct.pbobjc.m",
-                "GPBTimestamp.pbobjc.m",
-                "GPBType.pbobjc.m",
-                "GPBUnknownField+Additions.swift",
-                "GPBUnknownFields+Additions.swift",
-                "GPBWrappers.pbobjc.m"
+                "generate_well_known_types.sh",
+                "google"
             ],
             publicHeadersPath: ".",
             cSettings: [
@@ -85,6 +69,9 @@ let package = Package(
             path: "Source",
             exclude: [
                 "pbobjc"
+            ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy")
             ],
             publicHeadersPath: "include",
             cSettings: [
