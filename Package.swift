@@ -18,17 +18,7 @@ let package = Package(
             name: "Protobuf",
             path: "Vendor/ProtobufObjectiveC",
             exclude: [
-                "google/protobuf/Any.pbobjc.m",
-                "google/protobuf/Api.pbobjc.m",
-                "google/protobuf/Duration.pbobjc.m",
-                "google/protobuf/Empty.pbobjc.m",
-                "google/protobuf/FieldMask.pbobjc.m",
-                "GPBProtocolBuffers.m",
-                "google/protobuf/SourceContext.pbobjc.m",
-                "google/protobuf/Struct.pbobjc.m",
-                "google/protobuf/Timestamp.pbobjc.m",
-                "google/protobuf/Type.pbobjc.m",
-                "google/protobuf/Wrappers.pbobjc.m"
+                "GPBProtocolBuffers.m"
             ],
             publicHeadersPath: ".",
             cSettings: [
