@@ -2,3 +2,5 @@ UserInterface.xcuserstate
 xcuserdata/
 .build
 .claude
+.swiftpm
+.DS_Store

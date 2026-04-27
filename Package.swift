@@ -18,24 +18,17 @@ let package = Package(
             name: "Protobuf",
             path: "Vendor/ProtobufObjectiveC",
             exclude: [
-                ".clang-format",
-                ".gitignore",
-                "BUILD.bazel",
-                "README.md",
-                "defs.bzl",
-                "GPBAny.pbobjc.m",
-                "GPBApi.pbobjc.m",
-                "GPBDuration.pbobjc.m",
-                "GPBEmpty.pbobjc.m",
-                "GPBFieldMask.pbobjc.m",
+                "google/protobuf/Any.pbobjc.m",
+                "google/protobuf/Api.pbobjc.m",
+                "google/protobuf/Duration.pbobjc.m",
+                "google/protobuf/Empty.pbobjc.m",
+                "google/protobuf/FieldMask.pbobjc.m",
                 "GPBProtocolBuffers.m",
-                "GPBSourceContext.pbobjc.m",
-                "GPBStruct.pbobjc.m",
-                "GPBTimestamp.pbobjc.m",
-                "GPBType.pbobjc.m",
-                "GPBUnknownField+Additions.swift",
-                "GPBUnknownFields+Additions.swift",
-                "GPBWrappers.pbobjc.m"
+                "google/protobuf/SourceContext.pbobjc.m",
+                "google/protobuf/Struct.pbobjc.m",
+                "google/protobuf/Timestamp.pbobjc.m",
+                "google/protobuf/Type.pbobjc.m",
+                "google/protobuf/Wrappers.pbobjc.m"
             ],
             publicHeadersPath: ".",
             cSettings: [
@@ -85,6 +78,9 @@ let package = Package(
             path: "Source",
             exclude: [
                 "pbobjc"
+            ],
+            resources: [
+                .copy("Resources/PrivacyInfo.xcprivacy")
             ],
             publicHeadersPath: "include",
             cSettings: [
